@@ -419,7 +419,7 @@
 	   x-=2;
 	 }
 	 fs[i].setAttribute('x',x);
-	 updateMoney(.001);
+	 updateMoney(.001 * fcounter);
        }
        var ds = document.getElementsByClassName('dw');
        for(var i = 0;i < ds.length;i++){
@@ -447,7 +447,7 @@
 	 if(x > 450){
 	   ls[i].remove();
 	 }
-	 updateMoney(.1);
+	 updateMoney(.3 * dwcounter);
        }
        
        var bs = document.getElementsByClassName('b');
@@ -489,7 +489,7 @@
 	  case('9'):
 	       bs[i].setAttributeNS('http://www.w3.org/1999/xlink','href', 'Brooks1.png');
 	       bs[i].setAttribute('frames',1);
-	       updateMoney(500);
+	       updateMoney(500 * bcounter);
 	       break;
 	   default:
 	   alert("Not working.")
@@ -516,7 +516,7 @@
 	 inv * 1.2;
 	 brs[i].setAttribute('invest',inv);
 	 brs[i].setAttribute('x',x);
-	 updateMoney(.9);
+	 updateMoney(.1 * brcounter);
        }
        
        var zs = document.getElementsByClassName('z');
@@ -544,7 +544,7 @@
 	 if(x < 160){
 	   zls[i].remove();
 	 }
-	 updateMoney(1337);
+	 updateMoney(1337 * zcounter);
        }
 
        d.setAttributeNS('http://www.w3.org/1999/xlink','href', 'UltDonut.png');
